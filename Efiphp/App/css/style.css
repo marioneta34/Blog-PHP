@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css?family=Lora');
+@import url('https://fonts.googleapis.com/css?family=Candal');
+html, body {
+  padding: 0px;
+  margin: 0px;
+  font-family: 'Lora', serif;
+  height: 100%;
+  background: #f6f6f6;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover, a:active {
+  color: #008489;
+}
+
+.logo-text, h1, h2, h3, h4, h5, h6 {
+  font-family: 'Candal', sans-serif;
+  margin: 5px;
+  color: #5c5b5b;
+  font-weight: normal;
+}
+
+.clearfix::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+
+/* NAVBAR */
+
+header {
+  background: #f8f5f5;
+  color: #000000;
+  height: 66px;
+}
+
+header a:hover {
+  color: rgb(169, 125, 13);
+}
+
+.logo {
+  float: left;
+  margin-left: 2em;
+  height: inherit;
+}
+
+.logo-text {
+  padding: 0px;
+  color: rgb(128, 125, 125);
+  font-family: 'Candal', sans-serif;
+}
+
+.logo-text span {
+  color: #e9c13c;
+}
+
+header nav {
+  float: right;
+}
+
+header nav ul {
+  margin: 0px;
+  padding: 0px;
+  list-style-type: none;
+}
+
+header nav ul li {
+  float: left;
+  position: relative;
+}
+
+header nav ul li a {
+  display: block;
+  padding: 21px;
+  font-size: 1.1em;
+}
+
+
+
+header nav ul li ul {
+  display: none;
+  position: absolute;
+  right: 0px;
+  z-index: 4;
+}
+
+header nav ul li:hover .dropdown {
+  display: block;
+}
+
+header nav ul li .dropdown li {
+  width: 180px;
+}
+
+header nav ul li .dropdown li a {
+  background: rgb(207, 180, 22);
+  color: #444444;
+  padding: 10px;
+}
+
+header nav ul li .dropdown li a:hover {
+  background: #f0f0f0;
+}
+
+header nav ul .userinfo i.fa-chevron-down {
+  float: right;
+  font-size: .7em;
+  margin: 6px 3px;
+}
+
+.menu-toggle {
+  display: none;
+}
+
